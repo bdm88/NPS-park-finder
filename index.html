@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NPS Park Finder</title>
+        <link href="index.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery.min.js"></script>
+    </head>
+    <body>
+        <section class="container">
+            <h1>NPS Park Finder</h1>
+            <form id="searchForm">
+                <label for="stateSearch">Search States</label>
+                <input class="stateSearch" type="text" name="stateSearch" placeholder="WA,OR,CA" required>
+                <br>
+                <label for="maxResults">Max Results</label>
+                <input class="maxResults" type="number" name="maxResults" value="10">
+                <br>
+                <input type="submit" value="Find Parks">
+            </form>
+            <section class="searchResults hidden">
+                <h2>Search Results</h2>
+            </section>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>
